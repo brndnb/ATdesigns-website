@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    height: 120px;
+    border: solid 1px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left-container {
+    display: flex;
+}
+
+.header-logo {
+    height: 120px;
+}
+
+.header-phone-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.header-phone {
+    height: 36px;
+    width: 48px;
+}

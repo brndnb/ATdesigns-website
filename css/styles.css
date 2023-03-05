@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/*HEADER SCETION*/
 
 header{
     height: 120px;
@@ -30,4 +31,60 @@ header{
 .header-phone {
     height: 36px;
     width: 48px;
+}
+
+/*MAIN SECTION*/
+
+main {
+    border: solid 1px green;
+}
+
+.main-header {
+    text-align: center;
+}
+
+
+.featured-products-container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.featured-products-container article {
+    width: 760px;
+    height: 430px;
+    border: solid 1px black;
+}
+
+.mini-article-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.mini-article {
+    width: 360px;
+    height: 250px;
+    border: solid 1px black;
+}
+
+.highlights-container {
+    display: flex;
+    justify-content: center;
+   
+    
+}
+
+.highlights-container article {
+    width: 360px;
+    height: 350px;
+    border: solid 1px black;
+    margin: 10px;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    height: 200px;
+    background-color: #A6ADB4;
 }

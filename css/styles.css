@@ -2,13 +2,47 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #F6F8F9;
+}
+.main-btn-container {
+    text-align: center;
+}
+.main-btn:hover {
+    cursor: pointer;
+  }
+
+button {
+    border: none;
+    background-color: #C48A28;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    margin: 3rem 0 3rem 0;
+    box-shadow: 3px 2px 5px -2px rgba(0,0,0,0.41);
+    -webkit-box-shadow: 3px 2px 5px -2px rgba(0,0,0,0.41);
+    -moz-box-shadow: 3px 2px 5px -2px rgba(0,0,0,0.41);
+}
+
+.banner {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ 
+.banner h1{
+    text-align: center;
+
 }
 
 /*HEADER SCETION*/
 
 header{
-    height: 120px;
-    border: solid 1px black;
+    height: 9rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,8 +52,8 @@ header{
     display: flex;
 }
 
-.header-logo {
-    height: 120px;
+.logo-image {
+    height: 9rem;
 }
 
 .header-phone-container {
@@ -29,62 +63,253 @@ header{
 }
 
 .header-phone {
-    height: 36px;
-    width: 48px;
+    height: 2rem;
+    margin: 0 0.5rem 0 3rem;
 }
 
-/*MAIN SECTION*/
+/*NAV SECTION*/
 
-main {
-    border: solid 1px green;
+nav {
+    margin-right: 3rem;
 }
 
-.main-header {
-    text-align: center;
+nav a {
+    text-decoration: none;
+    color: #A6ADB4;
+    margin: 10px;
+    transition: color 0.3s ease-in;
 }
 
+nav a:hover {
+    color: black;
+}
 
-.featured-products-container {
-    display: flex;
+nav .btn {
+    background-color: #C48A28;
+    color: white;
+    padding: 9px 18px;
+    border-radius: 24px;
+    margin-left: 20px;
+}
+
+.nav-home {
+    color: black;
+    font-weight: bold;
+}
+
+/*MAIN AND GRID SECTION*/
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    gap: 1rem;
     justify-content: center;
-    
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.featured-products-container article {
-    width: 760px;
-    height: 430px;
-    border: solid 1px black;
+.grid-header {
+    margin-left: 0.75rem;
 }
 
-.mini-article-container {
+
+.grid-2fr-container {
+    grid-column: 1 / span 2;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    height: 100%;
 }
 
-.mini-article {
-    width: 360px;
+.grid-2fr-box {
+    
+    height: 27.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    box-shadow: 3px 2px 5px -2px rgba(0,0,0,0.41);
+    -webkit-box-shadow: 3px 2px 5px -2px rgba(0,0,0,0.41);
+    -moz-box-shadow: 3px 2px 5px -2px rgba(0,0,0,0.41);
+
+}
+
+.top-2fr {
+    background-image: url(/images/medals.png); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    transition: transform 0.2s ease-in-out; /* add a transition effect */
+}
+
+
+.top-2fr:hover {
+    transform: scale(1.01); /* zoom in effect on hover */
+}
+
+
+
+
+
+
+.bottom-2fr {
+    background-image: url(/images/coat-01.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    transition: transform 0.2s ease-in-out; /* add a transition effect */
+}
+
+.bottom-2fr:hover {
+    transform: scale(1.01); /* zoom in effect on hover */
+}
+
+.featured-products-text {
+    background-color: rgba(0, 0, 0, 0.534);
+    width: fit-content;
+    border-radius: 0 0.75rem;
+    padding: 1rem;
+}
+
+.img-container {
+    
+    border-radius: 0.75rem;
     height: 250px;
-    border: solid 1px black;
-}
-
-.highlights-container {
     display: flex;
     justify-content: center;
-   
+    align-items: center;
+    background-color: white;
+    box-shadow: 3px 2px 5px -2px rgba(0,0,0,0.41);
+    -webkit-box-shadow: 3px 2px 5px -2px rgba(0,0,0,0.41);
+    -moz-box-shadow: 3px 2px 5px -2px rgba(0,0,0,0.41);
+}
+
+
+
+.grid-1fr-box img {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
     
 }
 
-.highlights-container article {
-    width: 360px;
-    height: 350px;
-    border: solid 1px black;
-    margin: 10px;
+.grid-1fr-box h3 {
+
+    margin: 1.2rem 0 1.2rem 1.2rem;
+    
 }
+
+.side-bar {
+    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.highlights {
+    display: flex;
+    grid-column: 1 / span 3;
+    justify-content: space-between;
+}
+
+.header-highlights{
+
+    margin-top: 3rem;
+}
+
+.highlights-box {
+
+    border-radius: 0 0.75rem;
+    background-color: white;
+    height: 280px;
+    box-shadow: 3px 2px 5px -2px rgba(0,0,0,0.41);
+    -webkit-box-shadow: 3px 2px 5px -2px rgba(0,0,0,0.41);
+    -moz-box-shadow: 3px 2px 5px -2px rgba(0,0,0,0.41);
+
+}
+
+
+
+.highlights-img {
+    height: 8rem;
+    width: 18rem;
+    border-radius: 0 0.75rem 0 0;
+}
+
+.highlights-img-left {
+    background-image: url(/images/ladies-belt.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.highlights-img-center {
+    background-image: url(/images/champ-bracelet.png);
+    background-size: cover;
+    background-position: center;
+    background-position-y: -10rem;
+}
+
+.highlights-img-right {
+    background-image: url(/images/divot-tools.png);
+    background-size: cover;
+    background-position-y: -4.3rem;
+
+}
+
+.highlights-text, .featured-products-text {
+    margin: 1rem;
+}
+
+
+
+.highlights-text p {
+    color:#A6ADB4;
+}
+
+
+
+
+@media (max-width: 947px) {
+
+    .side-bar{
+        display: flex;
+        flex-direction: row;
+        grid-column: 1 / span 3;
+        
+    }
+
+    .img-container {
+        border-radius: 0%;
+    }
+
+    .grid-2fr-box {
+        width: 100%;
+        margin: 0 0 1rem 0;
+
+    }
+
+    .grid-1fr-box h2 {
+        text-align: center;
+        margin: 0;
+    }
+  
+  }
+
 
 /* FOOTER SECTION */
 
 footer {
-    height: 200px;
+    height: 10rem;
     background-color: #A6ADB4;
+}
+
+.logo-footer {
+    width: 10rem;
+    height: 9rem;
 }

@@ -2,3 +2,27 @@
     text-align: center;
     margin-block: 5rem;
 }
+
+
+.catalog-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.catalog-box{
+
+    border: solid 2px black;
+    width: 450px;
+    height: 35rem;
+    margin: 2rem;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}

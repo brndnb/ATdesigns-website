@@ -21,3 +21,11 @@
     line-height: 1.75rem;
     color: #A6ADB4;
 }
+
+
+.catalog-box {
+    border: solid 2px black;
+    width: 350px;
+    height: 250px;
+}
+

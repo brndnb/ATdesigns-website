@@ -13,9 +13,10 @@
 <body>
     <header>
         <div class="header-left-container">     
-            <div>
-                <a href="./index.html"><img src="./images/ATlogo.png" alt="AT Designs Logo" class="logo-image"></a>
-            </div>
+            
+
+            <a href="./index.html"><img src="./images/ATlogo.png" alt="AT Designs Logo" class="logo-image"></a>
+
             <div class="header-phone-container">
                 <img src="./images/PhoneHeader.png" alt="phone" class="header-phone">
                 <strong><em><p>+1-800-288-0111</p></em></strong>
@@ -25,16 +26,20 @@
             <a class="nav-home" href="./index.html">HOME</a>
             <a href="./about.html">ABOUT US</a>
             <a href="./products.html">PRODUCTS</a>
-            <a href="#" class="btn">GET A QUOTE</a>
+            <a href="./quotes.html" class="btn">GET A QUOTE</a>
         </nav>
         <div class="hamburger-icon" onclick="myFunction(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
+        
     </header>
+    <div class="burger-nav-container"></div>
     <div class="banner">
-        <h1>BANNER GOES HERE</h1>
+        
+        <img class="banner-image" src="./images/banner-image.jpg">
+         
         <div class="main-btn-container">
             <form action="./Catalog/catalog.html">
                 <button class="main-btn"><strong>VIEW CATALOG</strong></button>
@@ -43,21 +48,21 @@
     </div>
     <main>
         <div class="grid-container">
-            <h1 class="grid-header">Featured Products</h1>
+            <h1 class="grid-header featured-products-header">Featured Products</h1>
             <div class="grid-2fr-container">
-                <div class="grid-2fr-box top-2fr">
+                <a href="./Products/Medals/home.html"><div class="grid-2fr-box top-2fr">
                     <span class="bg-image"></span>
                     <div class="featured-products-text">
                         <h1>CUSTOM MEDALS</h1>
                         
                     </div>
-                </div>
-                <div class="grid-2fr-box bottom-2fr">
+                </div></a>
+                <a href="./Products/Pins/home.html"><div class="grid-2fr-box bottom-2fr">
                     <div class="featured-products-text">
                         <h1>LAPEL PINS</h1>
                        
                     </div>
-                </div>
+                </div></a>
             </div>
             <div class="grid-1fr side-bar">
                 <div class="grid-1fr-box">
@@ -66,20 +71,22 @@
                     </div>
                     <h3>Custom Buckles</h3>
                 </div>
-                <div class="grid-1fr-box">
+                <a href="./Products/Coins/home.html"><div class="grid-1fr-box">
                     <div class="img-container">
                         <img src="./images/custom-coins.png">
                     </div>
                     <h3>Custom Coins</h3>
-                </div>
+                </div></a>
                 <div class="grid-1fr-box">
-                    <div class="img-container">
+                    <div class="img-container bag-tags-image-container">
                         <img src="./images/bagtags.jpg" class="bag-tags-image">
                     </div>
                     <h3>Custom Bagtags</h3>
                 </div>
             </div>
-            <h1 class="grid-header header-highlights">Highlights</h1>
+
+            <h1 class="header-highlights grid-header">Highlights</h1>
+
             <div class="grid-1fr highlights">
                 <div class="highlights-box">
                     <div class="highlights-img highlights-img-left"></div>
@@ -112,7 +119,18 @@
 
     </main>
     <footer>
-        <img src="./images/logo-footer.png" class="logo-footer" alt="AT Designs Logo">
+        <div class="footer-left-container">
+            <img src="./images/logo-footer.png" class="logo-footer" alt="AT Designs Logo">
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./about.html">ABOUT</a></li>
+                <li><a href="./products.html">PRODUCTS</a></li>
+                <li><a href="./quotes.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="footer-right-container">
+            <em><p>All images and text copyright ATdesigns Insignia, <script type="text/javascript">document.write( new Date().getFullYear() );</script> - All rights reserved</p></em>
+        </div>    
     </footer>
     <script src="./js/hamburger.js"></script>
 </body>

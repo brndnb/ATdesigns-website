@@ -1,0 +1,40 @@
+
+
+
+.banner-image-container {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+}
+
+
+.header-text-container {
+    text-align: center;
+    margin-block: 3rem;
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bullet-points {
+    
+    max-width: 40rem;
+    margin-bottom: 2rem;
+}
+
+.bullet-points li {
+    margin-bottom: 0.2rem;
+}
+
+.button-container {
+    width: 100%;
+    text-align: center;
+}
+
+.description-image {
+    border-radius: 1rem;
+}

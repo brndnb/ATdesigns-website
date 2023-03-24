@@ -554,7 +554,7 @@ nav .btn {
 
 }
 
-@media (max-width: 306px) {
+@media (max-width: 290px) {
     .logo-image {
         height: 4rem;
         margin: 0;

@@ -53,6 +53,10 @@ a {
     
 }
 
+.keytag-description {
+    margin-bottom: 0rem;
+}
+
 .products-description p {
     line-height: 1.5;
 }

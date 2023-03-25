@@ -70,7 +70,13 @@
     background-color: #c48b2816;
 }
 
-
+.personalization {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 
 
 @media (max-width: 675px) {

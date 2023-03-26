@@ -32,7 +32,8 @@
     max-width: 1200px;
     margin: 0 auto;
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 5rem;
+    padding: 1.5rem;
 }
 
 .product-box {

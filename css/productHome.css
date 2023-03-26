@@ -121,7 +121,7 @@ main {
 .scroll-products-container {
    
     
-    padding-block: 1rem;
+    padding: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

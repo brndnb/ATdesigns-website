@@ -53,6 +53,10 @@ a {
     
 }
 
+.dog-tags {
+    margin-bottom: 0;
+}
+
 .keytag-description {
     margin-bottom: 0rem;
 }
@@ -125,6 +129,21 @@ main {
 
 }
 
+.plaque {
+   
+    
+    padding: 4rem;
+    margin-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    background-color: #c48b2816;
+    border-radius: 1rem;
+    
+
+}
+
 
 
 .product-box {
@@ -166,7 +185,6 @@ main {
     width: 4rem;
     margin-top: 0.5rem;
 }
-
 
 
 

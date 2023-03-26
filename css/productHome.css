@@ -98,7 +98,12 @@ main {
     padding: 3rem;
     display: flex;
     flex-direction: column;
+    line-height: 1.4;
     
+}
+
+.products-text-area strong {
+    color: black;
 }
 
 /*LEFT SIDE SECTION*/

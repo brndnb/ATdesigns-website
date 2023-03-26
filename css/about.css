@@ -10,6 +10,7 @@
     margin: 0 auto;
     text-align: center;
     margin-top: 5rem;
+    padding: 1rem;
 }
 
 .about-us-text-container h1 {
@@ -19,7 +20,6 @@
 
 .about-us-text-container p {
     line-height: 1.75rem;
-    color: #A6ADB4;
 }
 
 
@@ -27,5 +27,13 @@
     border: solid 2px black;
     width: 350px;
     height: 250px;
+}
+
+@media (max-width: 957px) {
+
+    .about-us-text-container h1 {
+        font-size: 1.5rem;
+    }
+
 }
 

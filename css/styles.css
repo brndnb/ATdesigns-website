@@ -11,6 +11,14 @@ a {
     color: black;
 }
 
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    color: #A6ADB4;
+}
+
 body {
     background-color: #F6F8F9;
 }
@@ -63,7 +71,7 @@ header{
 
 .header-left-container {
     display: flex;
-   
+    
 }
 
 
@@ -74,7 +82,12 @@ header{
 .header-phone-container {
     display: flex;
     align-items: center;
+    
+}
 
+.header-phone-container p {
+
+    color: black;
 }
 
 .header-phone {
@@ -159,6 +172,7 @@ nav .btn {
 
 .grid-header {
     margin-left: 0.75rem;
+    width: 30rem;
 }
 
 
@@ -172,7 +186,7 @@ nav .btn {
 
 .grid-2fr-box {
     
-    height: 27.5rem;
+    height: 28rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -217,7 +231,7 @@ nav .btn {
     background-color: rgba(0, 0, 0, 0.534);
     width: fit-content;
     border-radius: 0 0.75rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .img-container {
@@ -333,6 +347,10 @@ nav .btn {
 
 
 @media (max-width: 957px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
 
     .burger-nav-container{
         display: inline;
@@ -463,9 +481,9 @@ nav .btn {
 
     }
 
-    .bag-tags-image-container {
+    /* .bag-tags-image-container {
         height: 100%;
-    }
+    } */
 
     .bag-tags-image{
         width: max-content;

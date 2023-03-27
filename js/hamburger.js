@@ -14,7 +14,7 @@ const myFunction = (x) => {
       const a3 = document.createElement('a');
       const a4 = document.createElement('a');
       a1.textContent = 'HOME';
-      a1.setAttribute('href', '../../index.html');
+      a1.setAttribute('href', './index.html');
       li1.appendChild(a1);
       a2.textContent = 'ABOUT US';
       a2.setAttribute('href', './about.html');

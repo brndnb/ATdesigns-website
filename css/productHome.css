@@ -1,5 +1,5 @@
 a {
-    color: black;
+    color: #333;
 }
 
 
@@ -39,6 +39,8 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+
 
 .coin-banner-image{
     max-width: 60%;
@@ -108,7 +110,7 @@ main {
 }
 
 .products-text-area strong {
-    color: black;
+   color: #333;
 }
 
 /*LEFT SIDE SECTION*/

@@ -3,16 +3,22 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 a {
     text-decoration: none;
     line-height: 0;
-    color: black;
+    color: #333;
 }
 
 h1 {
     font-size: 3rem;
+    color: #333;
+}
+
+h3 {
+    color: #333;
 }
 
 p {

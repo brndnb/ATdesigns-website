@@ -28,7 +28,7 @@
 .back-btn-container {
     width: 100%;
     text-align: center;
-    
+    margin: 2rem;
 }
 
 .back-btn {
@@ -68,6 +68,7 @@
     width: 100%;
     text-align: center;
     background-color: #c48b2816;
+    padding: 3rem;
 }
 
 .personalization {

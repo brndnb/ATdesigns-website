@@ -53,6 +53,11 @@ a {
     
 }
 
+.products-description li {
+  margin: 1rem;
+    
+}
+
 .dog-tags {
     margin-bottom: 0;
 }
@@ -189,6 +194,20 @@ main {
 .domestic-logo {
     width: 4rem;
     margin-top: 0.5rem;
+}
+
+.quote-btn {
+    font-size: larger;
+    
+    
+}
+
+.quote-container {
+   
+    width: 100%;
+    text-align: center;
+    background-color: #c48b2816;
+    padding: 3rem;
 }
 
 

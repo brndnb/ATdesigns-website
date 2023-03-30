@@ -70,8 +70,6 @@ button:hover {
 
 
 
-
-
 /*HEADER SCETION*/
 
 header{
@@ -327,7 +325,7 @@ nav .btn:hover {
 
 .highlights-img {
     height: 8rem;
-    width: 18rem;
+    width: 18.4rem;
     border-radius: 0.5rem 0.5rem 0 0;
 }
 
@@ -358,10 +356,20 @@ nav .btn:hover {
 
 
 .highlights-text p {
+ 
+    margin-block: 0.3rem;
+}
+
+.highlights-bullet {
+    text-indent: -0.4rem;
+    margin-left: 1.2rem;
+    font-size: small;
     color:#A6ADB4;
 }
 
-
+.highlights-bullet li {
+    margin-block: 0.4rem;
+}
 
 
 @media (max-width: 957px) {
@@ -515,6 +523,7 @@ nav .btn:hover {
     .highlights {
         display: none;
     }
+
 
 }
 

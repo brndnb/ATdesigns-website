@@ -2,9 +2,13 @@
 
 
 .banner-image-container {
-    width: 100%;
+    max-width: 100%;
     text-align: center;
     background-color: white;
+}
+
+.banner-image-container img {
+    max-width: 100%;
 }
 
 
@@ -18,6 +22,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
 }
 
 .bullet-points {
@@ -36,5 +41,7 @@
 }
 
 .description-image {
+    max-width: 100%;
+    padding: 0.5rem;
     border-radius: 1rem;
 }

@@ -8,26 +8,28 @@ const testimonials = [
     { text: "I have the pins!! They look really good. Thanks again for your hard work in getting me pins in time for our meeting!", author: "SM" },
     { text: "I was really surprised at the level of detail AT was able to attain with our bat skull logo design! What self-respecting horror fan wouldn't put that on their belt?", author: "GP" },
     { text: "Thank you for the work you did on the Ozarks Medals.  They look better than we thought they would but so does everything else y’all do.  Pass my thanks along to everyone involved.", author: "BV" },
-    { text: "We received our Ironman coins today. Thank you for helping us out on such short notice...The military base here is a huge client and we always want to be able to accommodate the various units and with your help we can do it.", author: "BC" },
-    { text: "I am on a discussion group for promotional products and when the topic of pins comes up, I always mention AT Designs. You guys always do a good job", author: "TS" }
+    { text: "Thank you for helping us out on such short notice...The military base here is a huge client and we always want to be able to accommodate the various units and with your help we can do it.", author: "BC" },
+    { text: "I am on a discussion group for promotional products and when the topic of pins comes up, I always mention AT Designs. You guys always do a good job", author: "TS" },
+    { text: "The gold lapel pins and pendants that AT Designs created for my client's 50th Anniversary are fabulous. The gold color coupled with the great detail was even better than I imagined.", author: "JM"},
+    { text: "I appreciate everything and can very honestly say, I have never gone anywhere else for custom medals. I don't believe in messing with Success!", author: "JF"}
     // Add other testimonials here following the same structure
 ];
+
 
 let currentTestimonial = 0;
 
 function displayTestimonial() {
     const testimonial = testimonials[currentTestimonial];
-    const testimonialElements = $('.testimonials');
+    const testimonialElement = $('.testimonials');
 
-    testimonialElements.eq(0).text('"' + testimonial.text + '"').fadeIn(1000);
-    testimonialElements.eq(1).text('- ' + testimonial.author).fadeIn(1000);
+    testimonialElement.html('"' + testimonial.text + '"<br>- ' + testimonial.author).fadeIn(1000);
 
     setTimeout(() => {
-        testimonialElements.fadeOut(1000, () => {
+        testimonialElement.fadeOut(1000, () => {
             currentTestimonial = (currentTestimonial + 1) % testimonials.length;
             displayTestimonial();
         });
-    }, 6000);
+    }, 7000);
 }
 
 $(document).ready(() => {

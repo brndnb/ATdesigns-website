@@ -38,6 +38,79 @@
     <div class="burger-nav-container"></div>
     
     <main>
+
+
+        <div class="container">
+            <h2>Let's get started!</h2>
+            <form name="contact" method="POST" data-netlify="true">
+                <div class="quote-bullets">
+                    <ul>
+                        <li>Typically our resellers own their own businesses, some are trophy shops, some are online businesses, some are advertising specialty companies, some are print shops, etc.
+                        There are lots of varieties in the types of resellers that we have.</li>
+                        <li>If you are a reseller, we will quickly answer your request.
+                        If you are a consumer interested in a product, we will refer you to a reseller that serves your area.</li>
+                        <li>If you would like to send artwork files, please email them to <a href="mailto:info@atdesigns.com"><span>info@atdesigns.com</span></a></li>
+                    </ul>
+                </div>
+
+                <label for="customer_type" class="required">Are you a Reseller or a Consumer?</label>
+                <select id="customer_type" name="customer_type" required>
+                    <option value="">Please select</option>
+                    <option value="Consumer">Consumer - We will refer you to a Reseller</option>
+                    <option value="Reseller">Reseller - We will quote you directly</option>
+                </select>
+
+                <label for="name" class="required">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email" class="required">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="company">Company Name</label>
+                <input type="text" id="company" name="company">
+                
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="product_type" class="required">Type of Product</label>
+                <select id="product_type" name="product_type" required>
+                    <option value="">Please select</option>
+                    <option value="Medals">Medals</option>
+                    <option value="Lapel Pins">Lapel Pins</option>
+                    <option value="Buckles">Buckles</option>
+                    <option value="Coins">Coins</option>
+                    <option value="Bagtags">Bagtags</option>
+                    <option value="Key Tags">Key Tags</option>
+                    <option value="Dog Tags">Dog Tags</option>
+                    <option value="Police Badges">Police Badges</option>
+                    <option value="Automobile Badges">Automobile Badges</option>
+                    <option value="Plaques">Plaques</option>
+                    <option value="Keys to the City">Keys to the City</option>
+                    <option value="Letter Openers">Letter Openers</option>
+                    <option value="Ornaments">Ornaments</option>
+                    <option value="Jewelry">Jewelry</option>
+                    <option value="Pendants">Pendants</option>
+                    <option value="Bottle Openers">Bottle Openers</option>
+                    <option value="Recognition Awards">Recognition Awards</option>
+                    <option value="Military Products">Military Products</option>
+                    <option value="Uniform Products">Uniform Products</option>
+                    <option value="Fundraising Products">Fundraising Products</option>
+                    <option value="Souvenir Products">Souvenir Products</option>
+                </select>
+                <label for="quantity">Approximately how many pieces do you want?</label>
+                <input type="number" id="quantity" name="quantity" min="1" step="1">
+
+                
+                <label for="message" class="required">How would you like it to look? (Color, size, finish, etc.)</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                <div class="quote-btn-container">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+
+
+
     </main>
     <footer>
         <img src="./images/logo-footer.png" class="logo-footer" alt="AT Designs Logo">

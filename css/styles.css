@@ -25,6 +25,11 @@ p {
     color: #A6ADB4;
 }
 
+.large-text {
+    font-size: larger;
+   
+}
+
 body {
     background-color: #F6F8F9;
     min-height: 100vh;
@@ -99,7 +104,7 @@ header{
 
 .header-phone-container p {
 
-    color: black;
+    color: #333;
 }
 
 .header-phone {
@@ -121,7 +126,7 @@ nav a {
 }
 
 nav a:hover {
-    color: black;
+    color: #333;
 }
 
 nav .btn {
@@ -137,7 +142,7 @@ nav .btn:hover {
 }
 
 .nav-home {
-    color: black;
+    color: #333;
     font-weight: bold;
 }
 
@@ -166,6 +171,22 @@ nav .btn:hover {
 }
 
 .burger-nav-container {
+    display: none;
+}
+
+
+/* TESTIMONIALS SECTION*/
+
+.testimonials-section {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+.testimonials {
+    font-size: 2rem;
+    font-weight: 300;
     display: none;
 }
 
@@ -535,7 +556,10 @@ nav .btn:hover {
 
 @media (max-width: 460px) {
 
-
+    .large-text {
+        font-size: medium;
+       
+    }
 
     .header-phone-container p{
        font-size: smaller;

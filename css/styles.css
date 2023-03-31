@@ -182,6 +182,8 @@ nav .btn:hover {
     margin: 0 auto;
     text-align: center;
     padding: 2rem;
+    height: 18rem;
+    overflow: hidden;
 }
 
 .testimonials {

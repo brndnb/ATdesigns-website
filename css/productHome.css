@@ -40,6 +40,24 @@ a {
     align-items: center;
 }
 
+.ladies-belt-image-container {
+    height: 30rem;
+   
+    background-image: url(../images/ladies-belt.png); 
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.champ-bracelet-image-container {
+    height: 30rem;
+   
+    background-image: url(../images/champ-bracelet.png); 
+    background-size: cover;
+    background-position: center;
+    background-position-y: -46rem;
+}
+
 
 
 .coin-banner-image{
@@ -77,6 +95,12 @@ a {
 }
 
 /*MAIN SECTION*/
+
+.center-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 main {
     display: flex;

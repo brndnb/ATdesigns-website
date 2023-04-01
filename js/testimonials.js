@@ -29,7 +29,7 @@ function displayTestimonial() {
             currentTestimonial = (currentTestimonial + 1) % testimonials.length;
             displayTestimonial();
         });
-    }, 7000);
+    }, 4000);
 }
 
 $(document).ready(() => {

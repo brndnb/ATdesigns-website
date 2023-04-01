@@ -8,7 +8,7 @@
 
 a {
     text-decoration: none;
-    line-height: 0;
+    
     color: #333;
 }
 
@@ -91,9 +91,13 @@ header{
     
 }
 
+.header-left-container:first-child {
+    line-height: 0;
+}
 
 .logo-image {
     height: 9rem;
+    
 }
 
 .header-phone-container {
@@ -178,7 +182,7 @@ nav .btn:hover {
 /* TESTIMONIALS SECTION*/
 
 .testimonials-section {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     text-align: center;
     padding: 2rem;

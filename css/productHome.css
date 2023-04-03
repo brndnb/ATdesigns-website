@@ -49,13 +49,17 @@ a {
     
 }
 
-.champ-bracelet-image-container {
-    height: 30rem;
-   
-    background-image: url(../images/champ-bracelet.png); 
-    background-size: cover;
-    background-position: center;
-    background-position-y: -46rem;
+.champ-bracelet-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.champ-bracelet-img {
+ max-width: 15rem;
+ border-radius: 1rem;
+    
 }
 
 

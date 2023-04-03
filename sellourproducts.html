@@ -39,44 +39,55 @@
     
     <main>
         <div class="quote-header">
-            <h1>Let's get started!</h1>
+            <h1>Sell Our Products</h1>
         </div>
 
         <div class="container">
             
-            <form name="contact" method="POST" data-netlify="true">
-                <div class="quote-bullets">
+            <form name="distributor" method="POST" data-netlify="true">
+
+                <h3 class="distributor-form-header">Distributor Application Form</h3>
+             
+                <div class="distributor-bullets">
+                    <h5>Join our Growing Group of Resellers:</h5>
                     <ul>
-                        <li>Typically our resellers own their own businesses, some are trophy shops, some are online businesses, some are advertising specialty companies, some are print shops, etc.
-                        There are lots of varieties in the types of resellers that we have.</li>
-                        <li>If you would like to apply to become a reseller, fill out our application form: <br><a href="./sellourproducts.html"><strong><span>Distributor Application</span></strong></li></a>
-                        <li>If you are a reseller, we will quickly answer your request.
-                        If you are a consumer interested in a product, we will refer you to a reseller that serves your area.</li>
-                        <li>If you would like to send artwork files, please email them to <a href="mailto:info@atdesigns.com"><span>info@atdesigns.com</span></a></li>
+                        <li>Great opportunity to add to your existing product line</li>
+                        <li>No up front costs - no inventory to carry</li>
+                        <li>Reasonable profits available on every order</li>
+                    </ul>
+                </div>
+               
+                <div class="distributor-bullets">
+                    <h5>Do You Qualify?</h5>
+                    <ul>
+                        <li>Typically our resellers own their own busineses, some are trophy shops, some are online businesses, some are advertising speciality companies, some are print shops, etc. - there are lots of variety in the types of resellers that we have</li>
+                        <li>If you are looking for products for your own use, then we would invite you to complete our <a href="./quotes.html"><span><strong>Quote Request</strong></span></a> form and we will direct you to one of our resellers that services your area.</li>
+                        <li>However, if you want to order our products for sale to other companies, then we welcome you to apply below</li>
+                    </ul>
+                </div>
+                
+                <div class="distributor-bullets">
+                    <h5>How much does it cost?</h5>
+                    <ul>
+                        <li>Nothing.</li>
+                        <li>There is no inventory to carry - you only place an order when you have an order from one of your customers.</li>
                     </ul>
                 </div>
 
-                <label for="customer_type" class="required">Are you a Reseller or a Consumer?</label>
-                <select id="customer_type" name="customer_type" required>
-                    <option value="">Please select</option>
-                    <option value="Consumer">Consumer - We will refer you to a Reseller</option>
-                    <option value="Reseller">Reseller - We will quote you directly</option>
-                </select>
 
-                <label for="name" class="required">Name</label>
+
+
+                <label for="name" class="required">Contact Name</label>
                 <input type="text" id="name" name="name" required>
 
-                <label for="email" class="required">Email</label>
-                <input type="email" id="email" name="email" required>
+                <label for="company" class="required">Company Name</label>
+                <input type="text" id="company" name="company" required>
 
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone">
+                <label for="address" class="required">Address</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
 
-                <label for="company">Company Name</label>
-                <input type="text" id="company" name="company">
-
-                <label for="state_province">State/Province</label>
-                <select id="state_province" name="state_province">
+                <label for="state_province" class="required">State/Province</label>
+                <select id="state_province" name="state_province" required>
                     <option value="">Please select</option>
                     <optgroup label="USA States">
                         <option value="AL">Alabama</option>
@@ -148,37 +159,23 @@
                     <option value="Other">Other</option>
                 </select>
 
-                <label for="product_type" class="required">Type of Product</label>
-                <select id="product_type" name="product_type" required>
-                    <option value="">Please select</option>
-                    <option value="Medals">Medals</option>
-                    <option value="Lapel Pins">Lapel Pins</option>
-                    <option value="Buckles">Buckles</option>
-                    <option value="Coins">Coins</option>
-                    <option value="Bagtags">Bagtags</option>
-                    <option value="Key Tags">Key Tags</option>
-                    <option value="Dog Tags">Dog Tags</option>
-                    <option value="Police Badges">Police Badges</option>
-                    <option value="Automobile Badges">Automobile Badges</option>
-                    <option value="Plaques">Plaques</option>
-                    <option value="Keys to the City">Keys to the City</option>
-                    <option value="Letter Openers">Letter Openers</option>
-                    <option value="Ornaments">Ornaments</option>
-                    <option value="Jewelry">Jewelry</option>
-                    <option value="Pendants">Pendants</option>
-                    <option value="Bottle Openers">Bottle Openers</option>
-                    <option value="Recognition Awards">Recognition Awards</option>
-                    <option value="Military Products">Military Products</option>
-                    <option value="Uniform Products">Uniform Products</option>
-                    <option value="Fundraising Products">Fundraising Products</option>
-                    <option value="Souvenir Products">Souvenir Products</option>
-                </select>
-                
-                <label for="quantity">Approximately how many pieces do you want?</label>
-                <input type="number" id="quantity" name="quantity" min="1" step="1">
+                <label for="email" class="required">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="business_activity">Your Primary Business Activity:</label>
+                <textarea id="business_activity" name="business_activity" rows="2"></textarea>
+
+                <label for="industry_associations">Industry Associations:
+                    (Examples:  ARA, ASI, PPAC, PPAI)</label>
+                <textarea id="industry_associations" name="industry_associations" rows="2"></textarea>
+
 
                 
-                <label for="message" class="required">How would you like it to look? (Color, size, finish, etc.)</label>
+                <label for="message" class="required">To help serve you better, please indicate
+                    which products are of most interest.</label>
                 <textarea id="message" name="message" rows="6" required></textarea>
                 <div class="quote-btn-container">
                     <button type="submit">Submit</button>

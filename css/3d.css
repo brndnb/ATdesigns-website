@@ -2,13 +2,22 @@
 
 
 .banner-image-container {
-    max-width: 100%;
-    text-align: center;
+    width: 100%;
+    padding-bottom: 1rem;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.banner-image-container img {
+.banner-img-3d {
     max-width: 100%;
+}
+
+.domestic-options-image {
+    max-width: 10rem;
 }
 
 
@@ -44,4 +53,11 @@
     max-width: 100%;
     padding: 0.5rem;
     border-radius: 1rem;
+}
+
+
+
+.domestic-logo {
+    width: 4rem;
+    margin-top: 0.5rem;
 }
